@@ -1,0 +1,260 @@
+body
+{
+  width: 100%;
+  height: 100vh;
+
+  background-color: #FFDAA3;
+
+  margin: 0;
+}
+
+img
+{
+  pointer-events: none;
+  user-select: none;
+}
+
+.disabled
+{
+  opacity: 0;
+  pointer-events: none;
+}
+
+#navbar
+{
+  width: 100%;
+  height: 10vh;
+
+  background: #A3C8FF;
+
+  position: fixed;
+  top: 0;
+  left: 0;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+#navbar > h1
+{
+  font-size: 4.2em;
+  font-family: "Bebas Neue";
+
+  margin: 0;
+}
+
+#choose-opponent
+{
+  width: 100%;
+  text-align: center;
+
+  position: absolute;
+  top: 15%;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+
+  transition: 500ms;
+}
+
+#choose-opponent > p
+{
+  color: #ff8d80;
+  font-size: 6.5vw;
+  font-family: "Hypeblox";
+
+  margin: 0 0 1.25rem 0;
+}
+
+#opponents
+{
+  width: 100%;
+
+  display: grid;
+  grid-template-columns: repeat(auto-fit, 250px);
+  justify-content: space-evenly;
+}
+
+.opponent figure
+{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+  margin: 0;
+}
+
+.opponent
+{
+  transition: 125ms;
+}
+
+.opponent:hover
+{
+  transform: scale(1.125);
+}
+
+.opponent img
+{
+  width: 250px;
+  height: 250px;
+}
+
+.opponent-name
+{
+  font-size: 2em;
+  font-family: "Amattera Million";
+
+  margin: 0.75rem 0;
+}
+
+#AddOpp
+{
+  margin-top: 5rem !important;
+  transition: 100ms;
+}
+#AddOpp:hover
+{
+  transform: scale(1.125);
+  cursor: pointer;
+}
+
+#game
+{
+  width: 100%;
+  transition: 1000ms;
+}
+
+#game-box
+{
+  width: 100%;
+
+  position: absolute;
+  top: 15%;
+
+  display: flex;
+  justify-content: space-around;
+}
+
+#player-box, #opponent-box
+{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+#opponent-img img
+{
+  width: 250px;
+  height: 250px;
+}
+
+#round-text, #player-score-text, #opponent-score-text
+{
+  position: absolute;
+}
+
+#player-score-text
+{
+  left: 2.5%;
+}
+
+#opponent-score-text
+{
+  right: 2.5%;
+}
+
+#round-text p, #player-score-text p, #opponent-score-text p
+{
+  text-align: center;
+  font-size: 4.5vw;
+  font-weight: bold;
+
+  margin: 0;
+}
+
+#player-choice, #opponent-choice
+{ 
+  margin: 1.25rem 0;
+}
+.rps-choice-img
+{
+  width: 263px;
+  height: 100px;
+  border: none;
+}
+
+#player-choices
+{
+  width: 1000px;
+
+  position: absolute;
+  top: 100%;
+
+  display: flex;
+  justify-content: space-around;
+
+  margin-top: 5rem;
+}
+
+
+.rps-choice
+{
+  transition: 125ms;
+}
+.rps-choice:hover
+{
+  transform: scale(1.25);
+}
+
+#text
+{
+  width: 100%;
+  text-align: center;
+
+  position: absolute;
+  bottom: 2.5%;
+}
+
+#text p
+{
+  color: black;
+  font-size: 6em;
+  font-family: "Cherry Blue";
+
+  margin: 0;
+}
+
+@font-face {
+  font-family: "Amattera Million";
+  src: url(fonts/Amattera\ Million.ttf);
+}
+@font-face {
+  font-family: "Hypeblox";
+  src: url(fonts/Hypeblox.ttf);
+}
+@font-face {
+  font-family: "Cherry Blue";
+  src: url(fonts/Cherry\ Blue.ttf);
+}
+
+@media (max-width: 1400px)
+{
+  #player-choices
+  {
+    width: 260px;
+    height: 500px;
+
+    position: absolute;
+    top: 100%;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+
+    margin: 0rem;
+  }
+}
