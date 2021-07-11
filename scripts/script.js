@@ -2,7 +2,7 @@ let transitioned = false;
 let playerScore = 0;
 let computerScore = 0;
 let round = 0;
-const names = ["Maya", "Mahmoud"];
+const names = ["Maya", "Mahmoud", "Seif"];
 
 //On click store the selectedOpp in a var and transition
 let selectedOpponent;
